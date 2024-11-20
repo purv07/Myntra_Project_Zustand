@@ -1,7 +1,7 @@
 import Cart from "./Components/Cart/Cart";
 import MainCon from "./Components/MainCon";
 import Navbar from "./Components/Navbar";
-import { BrowserRouter as  Router, Route, Routes, Link, useLocation, Navigate } from "react-router-dom";
+import { BrowserRouter as  Router, Route, Routes, Link, useLocation, Navigate, HashRouter } from "react-router-dom";
 import Whislist from "./Components/Wishlist/Whislist";
 import Profile from "./Components/Profile";
 
@@ -9,7 +9,7 @@ function App() {
   return (
     <>
     
-      <Router basename="/Myntra_Project_Zustand">
+      <HashRouter basename="/Myntra_Project_Zustand">
       <Navbar />
         <Routes >
           <Route exact path="/Myntra_Project_Zustand" element={<MainCon />} />
@@ -17,7 +17,7 @@ function App() {
           <Route exact path="/Whislist" element={<Whislist />} />
           <Route exact path="/Cart" element={<Cart />} />
         </Routes>
-      </Router>
+      </HashRouter>
     </>
   );
 }
