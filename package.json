@@ -1,7 +1,7 @@
 {
   "homepage": "https://purv07/github.io/Myntra_Project_Zustand",
   "name": "myntra-project",
-  "private": true,
+  "private": false,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
