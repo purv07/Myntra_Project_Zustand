@@ -12,7 +12,7 @@ function App() {
       <Router basename="/Myntra_Project_Zustand">
       <Navbar />
         <Routes >
-          <Route exact path="/" element={<MainCon />} />
+          <Route exact path="/Myntra_Project_Zustand" element={<MainCon />} />
           <Route exact path="/Profile" element={<Profile/>} />
           <Route exact path="/Whislist" element={<Whislist />} />
           <Route exact path="/Cart" element={<Cart />} />
