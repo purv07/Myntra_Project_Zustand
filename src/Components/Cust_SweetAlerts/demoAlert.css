@@ -1,0 +1,28 @@
+.custom-swal-popup {
+    display: flex !important;
+    background-color: #28a745;    /* Green background */
+    color: white;                 /* White text */
+    border-radius: 3px;  
+    grid-column: 0 !important;         /* Rounded corners */
+    padding: 12px;
+    z-index: 1000;
+    font-family: Arial, sans-serif;           /* Flexbox to align items horizontally */
+    max-width: 330px;                 /* Fixed width to control layout */
+  }
+  
+  .custom-swal-title {
+    font-size: 16px;  
+    margin: auto;
+    display: flex;            
+    font-weight: 400;
+    padding: 0px 30px 0px 0px !important;
+  }
+  
+  .custom-swal-icon {
+    font-size: 5px;  
+    margin:auto 5px auto 10px !important;
+    color: white;    
+  }
+  
+
+  

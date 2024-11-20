@@ -1,0 +1,51 @@
+.MainConGrid {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 0.5rem;
+}
+
+.ImgRespo{
+    width: 200px;
+    height: 300px;
+    object-fit: scale-down;
+}
+
+body {
+    padding-right: 0 !important;
+  }
+
+@media (max-width:1230px){
+    .MainConGrid {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 0.5rem;
+    }
+    
+}
+
+
+@media (max-width:1000px){
+    .MainConGrid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 0.5rem;
+    }
+
+    
+}
+
+
+
+@media (max-width:780px){
+    .MainConGrid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 0.5rem;
+    }
+
+}
+@media (max-width:550px){
+    .MainConGrid {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+        gap: 0.5rem;
+        margin: 0px;
+        padding: 0px;
+    }
+}

@@ -1,0 +1,43 @@
+html {
+    overflow-y: scroll;
+}
+
+/* Custom checkbox styles */
+.custom_checkbox {
+    appearance: none; /* Remove default styling */
+    border: 2px solid #ccc; /* Default border color */
+    border-radius: 4px; /* Rounded corners */
+    width: 1rem; /* Size same as w-4 */
+    height: 1rem; /* Size same as h-4 */
+    position: relative; /* Needed for positioning the checkmark */
+    outline: none; /* Remove default outline */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: border-color 0.3s, background-color 0.3s; /* Smooth transitions */
+  }
+  
+  .custom_checkbox:checked {
+    background-color: #ff3f6c; /* Background color when checked */
+    border-color: #ff3f6c; /* Border color when checked */
+  }
+  
+  .custom_checkbox:checked::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0.3rem;/* Checkmark size */
+    height: 0.6rem; /* Checkmark size */
+    border: solid white; /* Checkmark color */
+    border-width: 0 0.11rem 0.15rem 0; /* Checkmark shape */
+    transform: translate(-50%, -50%) rotate(45deg); /* Position and rotate */
+  }
+  
+  .ImgDisplay{
+    width: 130px;
+    height: 160px;
+  } 
+
+  .DialogZIndex{
+    z-index: 2000;
+  }
+  

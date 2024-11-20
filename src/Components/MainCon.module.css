@@ -1,0 +1,203 @@
+
+
+body {
+    padding-right: 0 !important;
+}
+
+/* Custom checkbox styles */
+.custom_checkbox {
+  appearance: none; /* Remove default styling */
+  border: 2px solid #ccc; /* Default border color */
+  border-radius: 4px; /* Rounded corners */
+  width: 1rem; /* Size same as w-4 */
+  height: 1rem; /* Size same as h-4 */
+  position: relative; /* Needed for positioning the checkmark */
+  outline: none; /* Remove default outline */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: border-color 0.3s, background-color 0.3s; /* Smooth transitions */
+}
+
+.custom_checkbox:checked {
+  background-color: #ff3f6c; /* Background color when checked */
+  border-color: #ff3f6c; /* Border color when checked */
+}
+
+.custom_checkbox:checked::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0.3rem;/* Checkmark size */
+  height: 0.6rem; /* Checkmark size */
+  border: solid white; /* Checkmark color */
+  border-width: 0 0.11rem 0.15rem 0; /* Checkmark shape */
+  transform: translate(-50%, -50%) rotate(45deg); /* Position and rotate */
+}
+
+.MainConGrid{
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+}
+.MainConGridSpan1{
+    grid-column: span 2 / span 2;
+    border-width: 1px;
+    border-left: 0px;
+    --tw-border-opacity: 1;
+     border-color: rgb(243 244 246 / var(--tw-border-opacity)) /* #f3f4f6 */;
+}
+.HrLine{
+    grid-column: span 2 / span 2;
+    border-width: 1px;
+    border-bottom: 1px;
+    --tw-border-opacity: 1;
+     border-color: rgb(243 244 246 / var(--tw-border-opacity)) /* #f3f4f6 */;
+}
+.MainConGridSpan2{
+    grid-column: span 10 / span 10;
+    margin-right: 20px;
+}
+
+.MarginTopMain{
+    margin-top: 7rem;
+}
+
+.Img_MainCon{
+    width: 210px;
+    height: 280px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.DivFixSize{
+    width: 200px; /* Set a fixed width */
+    height: 300px; /* Set a fixed height */
+}
+.product_image {
+    width: 200px; 
+    height: 300px; 
+    object-fit: scale-down; 
+  }
+
+
+.DisplayShow {
+    visibility: hidden; /* Initially hidden but keeps its space */
+    opacity: 0; /* Initially invisible */
+    transform: translateY(50%); /* Start from below the visible area */
+    transition: transform 0.2s ease-in-out, opacity 0.5s ease-in-out; /* Smooth transition for both transform and opacity */
+    height:3rem;
+    z-index: 10;
+}
+
+.ProductBoxHover:hover .DisplayShow {
+    visibility: visible; /* Show the element */
+    opacity: 1; /* Fade in */    border: 0px;
+    box-shadow: 0px;
+    transform: translateY(0); /* Slide to its normal position */
+}
+
+.ProductBoxHover:hover{
+    box-shadow: 0 2px 16px 4px rgba(40,44,63,.07);
+}
+
+
+
+
+
+
+
+.MainGridGallery{
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 1rem;
+}
+
+@media (max-width:1200px){
+    .MainGridGallery{
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+    .MainConGridSpan1{
+        grid-column: span 3 / span 3;
+    }
+    .MainConGridSpan2{
+        grid-column: span 9 / span 9;
+    }
+}
+
+
+@media (max-width:1100px){
+    .MainGridGallery{
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+    .MainConGridSpan1{
+        grid-column: span 3 / span 3;
+    }
+    .MainConGridSpan2{
+        grid-column: span 9 / span 9;
+    }
+
+    
+}
+@media (max-width:1024px) {
+    .MarginTopMain{
+        margin-top: 11rem;
+    }
+}
+
+@media (max-width:900px){
+    .MainGridGallery{
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    .MainConGridSpan1{
+        grid-column: span 4 / span 4;
+    }
+    .MainConGridSpan2{
+        grid-column: span 8 / span 8;
+    }
+}
+
+
+@media (max-width:639px){
+    .MainGridGallery{
+        display: grid;
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+    .MainConGridSpan1{
+        grid-column: span 6 / span 6;
+    }
+    .MainConGridSpan2{
+        grid-column: span 6 / span 6;
+    }
+    .MarginTopMain{
+        margin-top: 0rem;
+    }
+    
+    
+
+}
+@media (max-width:480px){
+    .MainConGrid{
+        display: grid;
+        grid-template-rows: repeat(0, minmax(0, 1fr));
+    }
+    .MainConGridSpan1{
+        grid-column: span 12 / span 12;
+        
+    }
+    .MainConGridSpan2{
+        grid-column: span 12 / span 12;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .HrLine{
+       display: none;
+    }
+    .Img_MainCon{
+        width: 180px;
+        height: 250px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
