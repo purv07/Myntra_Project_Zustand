@@ -9,9 +9,9 @@ function App() {
   return (
     <>
     
-      <Router >
+      <Router basename="/Myntra_Project_Zustand">
       <Navbar />
-        <Routes>
+        <Routes >
           <Route exact path="/" element={<MainCon />} />
           <Route exact path="/Profile" element={<Profile/>} />
           <Route exact path="/Whislist" element={<Whislist />} />
