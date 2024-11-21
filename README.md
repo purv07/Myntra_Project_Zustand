@@ -1,8 +1,17 @@
-# React + Vite
+# Myntra Project - React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is an e-commerce site project named **Myntra**, built using **React** and **Vite**. The project leverages the power of React Router for seamless navigation and ensures a fast, modern development experience using Vite.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **React**: A declarative, component-based JavaScript library for building user interfaces.
+- **Vite**: A blazing-fast development server and build tool.
+- **React Router**: Enables dynamic routing for a seamless user experience.
+- **Modern Development Setup**: Includes HMR (Hot Module Replacement) and optimized build tools.
+- **Responsive UI**: A clean and mobile-friendly user interface designed for e-commerce.
+
+## Tech Stack
+
+- **Frontend**: React, React Router
+- **Build Tool**: Vite
+- **Language**: JavaScript (ES6+)
