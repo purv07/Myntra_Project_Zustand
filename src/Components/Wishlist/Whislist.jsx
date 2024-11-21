@@ -22,7 +22,7 @@ export default function Whislist() {
           <div className='flex justify-center flex-col h-screen '>
             <p className='font-Cust_NavbarFont font-bold mx-auto text-[20px]'>YOUR WISHLIST IS EMPTY</p>
             <p className='font-Cust_NavbarFont font-normal  text-center text-[18px] text-[#94989f] mx-auto mt-5 max-w-[360px]'>Add items that you like to your wishlist.Review them anytime and easily move them to the bag.</p>
-            <img src='src\assets\SVG\Add notes-amico.svg ' className='mx-auto w-[200px] h-[200px]' />
+            <img src='https://raw.githubusercontent.com/purv07/Myntra_Project_Zustand/refs/heads/main/src/assets/SVG/Add%20notes-amico.svg' className='mx-auto w-[200px] h-[200px]' />
             <div onClick={() => { NavigateToHome('/') }} className='cursor-pointer border border-[#1D85FC] px-10 py-3 mx-auto rounded-[3px] mt-5 text-[#1D85FC] font-bold'>CONTINUE SHOPPING</div>
           </div>
           :
