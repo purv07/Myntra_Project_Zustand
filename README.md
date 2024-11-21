@@ -12,7 +12,7 @@ This is an e-commerce site project named **Myntra**, built using **React** and *
 
 ## Tech Stack
 
-- **Frontend**: React, React Router
+- **Frontend**: React, React Router ,Zustand
 - **Build Tool**: Vite
 - **Language**: JavaScript (ES6+)
 
