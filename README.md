@@ -15,3 +15,18 @@ This is an e-commerce site project named **Myntra**, built using **React** and *
 - **Frontend**: React, React Router
 - **Build Tool**: Vite
 - **Language**: JavaScript (ES6+)
+
+## Screenshots
+
+
+### Homepage
+![Myntra Homepage](/Screenshots/Screenshot%202024-11-21%20174306.png "Screenshot of Myntra Homepage")
+
+
+### Cart
+![Myntra Homepage](/Screenshots/Screenshot%202024-11-21%20174343.png "Screenshot of Myntra Homepage")
+
+
+### Wishlist
+![Myntra Homepage](/Screenshots/Screenshot%202024-11-21%20174356.png "Screenshot of Myntra Homepage")
+
